@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+body{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo-pk{
+    height: 3.4375rem;
+  
+}
+
+.logo{
+    height: 3rem;
+}
+.hero{
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.8;
+    
+}
+
+.title{
+    
+    font-weight: bold;
+    align-self: center;
+    color: #fff;
+}
+
+.subtitle{
+    align-self: center;
+    color: #fff;
+}
+
+.ir{
+    align-self: center;
+}
+.pkdx{
+    margin-left: 40%;
+    width: 20%;
+    transition: transform .3s;
+}
+.pkdx:hover{
+    transform: scale(1.5); 
+}
+
+.title2{
+    margin-bottom: 30px;
+}
+.buscador{
+    margin-bottom: 30px;
+}
+.boton{
+    margin: 20px;
+}
+
+footer{
+    height: 75px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper indigo lighten-1">
+          <a href="" class="brand-logo center"><img class="logo-pk" src="assets/img/logo-pk.png" alt=""></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a class="" href="#"><img class="logo brand-logo left" src="assets/img/indice.png" alt=""></a> </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <header class="hero">
+        <h1 class="title ">Bienvenido a Pokédex</h1>
+        <h4 class="subtitle">Ir a la experiencia</h4>
+        <a class="ir"href="#exp"><img class="pkdx" src="assets/img/indice.png"  alt=""></a>
+      </header>
+
+      <section class="pokedex">
+          <div id="exp" class="container">
+              <div class="row">
+                  <div class="col l12 center">
+                      <h2 class="title2">Pokédex</h2>
+                      
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col l12 center buscador">
+                    <i class="material-icons prefix">search</i>
+                    <div class="input-field inline">
+                        <input id="poke-id" type="text" >
+                        <label for="poke-id"> 1-807</label>
+                        
+                        <span class="helper-text" data-error="wrong" data-success="right">Busca tu Pokémon por ID</span>
+                      </div>
+                      
+                    <a class=" boton waves-effect waves-light indigo lighten-1  btn-small">Buscar</a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div id="pokemon-card" class="col l6"></div>
+                  <div id="pokemon-grafico" class="col l6"></div>
+              </div>
+          </div>
+      </section>
+      <footer class=" footer-copyright indigo lighten-1" >
+          <div class="container text-lighten-4 center ">
+              <br>
+             <p class="grey-text text-lighten-4 ">En colaboración con <a class="grey-text text-lighten-1 " href="https://pokeapi.co/">pokeapi.co</a></p>
+          </div>
+      </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="assets/js/script.js"></script>     
+               
+</body>
+</html>
