@@ -62,3 +62,20 @@ body{
 footer{
     height: 75px;
 }
+
+.fotos{
+    display: flex;
+    justify-content: space-around;
+}
+.foto-poke{
+    height: 130px;
+    margin-top:50px;
+}
+span{
+    font-size: 26px;
+    font-weight: 500;
+    
+}
+p{
+    font-size: 20px;
+}
