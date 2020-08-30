@@ -1,11 +1,14 @@
+
 $(function () {
    $("#buscar").click(e=>{
-      var idPokemon = $("#poke-id").val();
-      //validacion
-      console.log(idPokemon);
-      traerPersonaje(idPokemon);
+      buscarPersonaje();
+   });
 
-   })
+   $(document).keypress(e => { 
+     if(e.which == 13){
+      buscarPersonaje();
+     }
+   });
 });
 
 traerPersonaje = (id) =>{
@@ -16,11 +19,7 @@ traerPersonaje = (id) =>{
             console.log("response ", response);
             //imprimir data
                 $("#pokemon-card").empty(generarCard(response));
-                $("#pokemon-card").append(generarCard(response));
-            
-            
-           
-           
+                $("#pokemon-card").append(generarCard(response));  
         }
     });
 }
@@ -47,3 +46,25 @@ generarCard = (personaje) => {
 
     return card;
 }
+
+  validacion = (id) =>{
+    var expresion = /^\d{1,3}$/;
+
+    if(!expresion.test(id)){
+      alert("invalido");
+      $("poke-id").focus();
+      return false;
+    }
+      return true;
+  }
+
+  buscarPersonaje = () =>{
+    var idPokemon = $("#poke-id").val();
+        //validacion
+        if(validacion(idPokemon) || idPokemon<807 || idPokemon>0){
+          traerPersonaje(idPokemon);
+          $("#poke-id").val("");
+          $("#poke-id").focus();
+          
+        }
+  }

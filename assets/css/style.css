@@ -72,10 +72,18 @@ footer{
     margin-top:50px;
 }
 span{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     
 }
 p{
     font-size: 20px;
 }
+
+.card{
+    transition: transform .3s;
+  }
+  
+  .card:hover{
+    transform: scale(1.1); 
+  }
